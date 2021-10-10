@@ -13,7 +13,7 @@
     <title>Sign Up</title>
 </head>
 
-<body>
+<body class="bg-signup">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid contain">
             <a class="navbar-brand" href="#"><b class="logo-txt">BooksWorld!</b></a>
@@ -37,7 +37,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="login.html">Log in</a></li>
-                            <li><a class="dropdown-item" href="#">Sign up</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -49,48 +49,45 @@
         </div>
     </nav>
 
-    <div class="container-fluid form mt-4">
-        <h5 style="text-align: center;">Sign Up</h5>
-        <form>
-            <div class="mb-3 mt-4">
-                <label for="firstName" class="form-label">First name</label>
+    <div class="container-fluid signupForm mt-4">
+        <h5 style="text-align: center;font-family: 'Source Code Pro', monospace;">Sign up for BooksWorld!</h5>
+        <form class="row g-4  mt-2">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="firstName">
             </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Last name</label>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
                 <input type="text" class="form-control" id="lastName">
             </div>
-            <div class="mb-3">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city">
+            <div class="col-md-6">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signupEmail">
             </div>
-            
-            <div class="mb-3">
-                <label for="signupEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
+            <div class="col-md-6">
                 <label for="signupPass" class="form-label">Password</label>
                 <input type="password" class="form-control" id="signupPass">
             </div>
-            <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea class="form-control" placeholder="Street address" id="address" style="height: 75px; resize: none;"></textarea>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <textarea class="form-control" placeholder="Street address" id="address"
+                    style="height: 75px; resize: none;"></textarea>
             </div>
-            <div class="mb-3">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city">
+            <div class="col-md-5">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
             </div>
-            <div class="mb-3">
-                <label for="pincode" class="form-label">Pincode</label>
-                <input type="text" class="form-control" id="pincode">
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
             </div>
-            
-            <div class="btn">
-                <button type="submit" class="btn btn-primary">Sign up</button>
+            <div class="col-md-5">
+                <label for="contactNo" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="contactNo">
             </div>
-   
+            <div class="col-12 btn-center">
+                <button type="submit" class="btn btn-primary btn-center">Sign up</button>
+            </div>
         </form>
     </div>
     <br><br><br>
