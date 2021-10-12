@@ -1,3 +1,12 @@
+<?php
+include("dbconfig.php");
+
+
+
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -51,42 +60,43 @@
 
     <div class="container-fluid signupForm mt-4">
         <h5 style="text-align: center;font-family: 'Source Code Pro', monospace;">Sign up for BooksWorld!</h5>
-        <form class="row g-4  mt-2">
+        <form class="row g-4  mt-2" method="post" action="">
             <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName">
+                <input type="text" name="firstName"  class="form-control" id="firstName">
             </div>
             <div class="col-md-6">
                 <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName">
+                <input type="text" name="lastName"  class="form-control" id="lastName">
             </div>
             <div class="col-md-6">
                 <label for="signupEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="signupEmail">
+                <input type="email" name="email"  class="form-control" id="signupEmail">
             </div>
             <div class="col-md-6">
                 <label for="signupPass" class="form-label">Password</label>
-                <input type="password" class="form-control" id="signupPass">
+                <input type="password" name="pass"  class="form-control" id="signupPass">
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>
-                <textarea class="form-control" placeholder="Street address" id="address"
+                <textarea class="form-control" name="address" placeholder="Street address" id="address"
                     style="height: 75px; resize: none;"></textarea>
             </div>
             <div class="col-md-5">
                 <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" name="city" class="form-control" id="inputCity">
             </div>
             <div class="col-md-2">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" name="zip" class="form-control" id="inputZip">
             </div>
             <div class="col-md-5">
                 <label for="contactNo" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="contactNo">
+                <input type="text" name="phone" class="form-control" id="contactNo">
             </div>
+            <button type="submit" class="btn btn-primary btn-center">Sign up</button>
             <div class="col-12 btn-center">
-                <button type="submit" class="btn btn-primary btn-center">Sign up</button>
+                
             </div>
         </form>
     </div>
