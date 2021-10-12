@@ -1,9 +1,13 @@
 <?php
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'booksworld';
+$servername = "localhost";
+$username = "root";
+$password = "";
 
-$con = mysqli_connect("localhost","root","","booksworld") or die(mysql_error());
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
-?>
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
